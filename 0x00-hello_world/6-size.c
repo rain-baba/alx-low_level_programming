@@ -1,9 +1,11 @@
 #include <stdio.h>
 
+
 /**
- * main - main block
- * Reuturn: 0
+ * main - Entry point
+ * Return: 0
  */
+
 
 int main(void)
 {
