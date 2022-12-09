@@ -6,22 +6,17 @@
  * Return: Always 0 (Success)
  *
  */
-int main()
+int main(void)
 {
-	char ch = 'a';
-       	char CH = 'A';
-       	 
-	while (ch <= 'z')
-	{
-		putchar(ch);
-		ch++;
-	}
-	while (CH <= 'Z')
-	{
-		putchar(CH);
-		CH++;
-	}
-	putchar('\n');
-	return (0);
-}
+	char ch;
 
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
+
+	putchar('\n');
+
+	return (0);
+
+}
