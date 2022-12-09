@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
  * main - main function to generate a random number
  *
  * Return: Always 0 (success)
  *
  */
-
 int main(void)
 {
 	int n;
@@ -28,7 +26,5 @@ int main(void)
 	{ 
 		printf("%d is negative\n", n);
 	}
-
 	return (0);
-
 }
