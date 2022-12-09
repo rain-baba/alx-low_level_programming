@@ -8,12 +8,9 @@
  */
 int main()
 {
-	char ch;
-       	
-	char CH;
+	char ch = 'a';
+       	char CH = 'A';
        	 
-	ch = 'a';
-	CH = 'A';
 	while (ch <= 'z')
 	{
 		putchar(ch);
