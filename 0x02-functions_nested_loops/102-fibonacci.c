@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - check for multiples of 3 and 5
  *
  * return: Always 0
  *
