@@ -1,67 +1,35 @@
 #include <stdio.h>
 
 /**
+ * main - Prints all combinations of two two digits with,
+ * and space followed by new line
  *
- *  * main - Prints all possible combinations of a pair of
- *
- *   * two digit numbers, without any repetition.
- *
- *   (*
- *
- *    * Return: 0 on success.
- *
- *     */
-
-
+ * Return: returns 0
+ */
 
 int main(void)
-
 {
+	int digit1, digit2;
 
-		int i, j;
-
-
-
-			for (i = 0; i <= 99; i++)
-
-					{
-
-								for (j = 0; j <= 99; j++)
-
-											{
-
-															if (i < j && i != j)
-
-																			{
-
-																								putchar((i / 10) + '0');
-
-																												putchar((i % 10) + '0');
-
-																																putchar(' ');
-
-																																				putchar((j / 10) + '0');
-
-																																								putchar((j % 10) + '0');
-
-																																												if (i != 98 || j != 99)
-
-																																																	{
-
-																																																							putchar(',');
-
-																																																												putchar(' ');
-
-																																																																}
-
-																																															}
-
-																	}
-
-									}
-
-				putchar('\n');
-
-					return (0);
-
+	for (digit1 = 0; digit1 <= 98; digit1++)
+	{
+		for (digit2 = digit1 + 1; digit2 <= 99; digit2++)
+		{
+			putchar((digit1 / 10) + '0');
+			putchar((digit1 % 10) + '0');
+			putchar(32);
+			putchar((digit2 / 10) + '0');
+			putchar((digit2 % 10) + '0');
+			if (digit1 / 10 != 9 || digit1 % 10 != 8)
+			{
+				putchar(44);
+				putchar(32);
+			}
+		}
+	}
+	putchar(10);
+	return (0);
 }
+
+				
+
