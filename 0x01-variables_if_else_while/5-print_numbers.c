@@ -1,21 +1,20 @@
 #include <stdio.h>
+#include <ctype.h>
 
 /**
+ * main - Prints all single digits of base 10 followed by new line
  *
- *  * main - Prints the numbers from 0-9.
- *
- *  (*
- *
- *   * Return: 0 on success
- *
- *    */
+ * Return: returns 0
+ */
 
 int main(void)
-
 {
+	int digit;
 
-		printf("0123456789\n");
-
-			return (0);
-
+	for (digit = '0'; digit <= '9'; digit++)
+	{
+		putchar(digit);
+	}
+	putchar('\n');
+	return (0);
 }
