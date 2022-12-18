@@ -1,49 +1,30 @@
 #include <stdio.h>
+#include <ctype.h>
 
 /**
+ * main - Prints all single digits of base 16 followed by new line
  *
- *  * main - prints all numbers of base 16.
- *
- *  (*
- *
- *   * Return: 0 on success
- *
- *    */
+ * Return: returns 0
+ */
 
 int main(void)
-
 {
+	int digit;
 
-		int i = '0';
-
-
-
-			while (i <= '9')
-
-					{
-
-								putchar(i);
-
-										i++;
-
-											}
-
-				i = 'a';
-
-					while (i <= 'f')
-
-							{
-
-										putchar(i);
-
-												i++;
-
-													}
-
-						putchar('\n');
-
-							return (0);
-
-
-
+	for (digit = '0'; digit <= '9'; digit++)
+	{
+		putchar(digit);
+		if (digit == '9')
+		{
+			digit = 'a';
+			for (; digit <= 'f'; digit++)
+			{
+				putchar(digit);
+			}
+			break;
+		}
+	}
+	putchar('\n');
+	return (0);
 }
+
