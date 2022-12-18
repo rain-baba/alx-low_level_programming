@@ -1,37 +1,21 @@
 #include <stdio.h>
+#include <ctype.h>
 
 /**
+ * main - Prints all single digits of base 10 followed by new line
  *
- *  * main - prints numbers 0-9 without using char or printf/puts,
- *
- *   * and putchar 2x max
- *
- *   (*
- *
- *    * Return: 0 on success
- *
- *     */
+ * Return: 0 on success
+ */
 
 int main(void)
-
 {
+	int digit;
 
-		int i = '0';
-
-
-
-			while (i <= '9')
-
-					{
-
-								putchar(i);
-
-										i++;
-
-											}
-
-				putchar('\n');
-
-					return (0);
-
+	for (digit = '0'; digit <= '9'; digit++)
+	{
+		putchar(digit);
+	}
+	putchar('\n');
+	return (0);
 }
+
