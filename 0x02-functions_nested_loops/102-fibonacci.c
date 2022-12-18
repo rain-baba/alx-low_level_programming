@@ -1,16 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - check for multiples of 3 and 5
+ * main - prints out first 50
+ * fibonacci suit numbers
  *
- * return: Always 0
- *
+ * Return: return 0
  */
 
 int main(void)
 {
 	unsigned long first, second, c, next;
-
 
 	first = 1;
 	second = 2;
