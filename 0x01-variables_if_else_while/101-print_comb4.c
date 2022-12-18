@@ -1,35 +1,65 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible different combinations of three digits
  *
- * Return: 0 if success
- */
+ * *main - Prints all combinations of three digits with,
+ *
+ * * and space followed by new line
+ *
+ * *
+ *
+ * *Return: returns 0
+ *
+ * */
 
 int main(void)
+
 {
-	int count;
 
-	for (count = 12; count < 1000; count++)
-	{
-		int number1, number2, number3;
+		int digit1, digit2, digit3;
 
-		number1 = count / 100;
-		number2 = (count / 10) % 10;
-		number3 = x % 10;
-		if (number3 > number2 && number2 > number1)
-		{
-			if (count > 12)
-			{
-				putchar (',');
-				putchar (' ');
-			}
-			putchar (number1 + 48);
-			putchar (number2 + 48);
-			putchar (number3 + 48);
-		}
-	}
-	putchar ('\n');
-	return (0);
+
+
+			for (digit1 = 0; digit1 < 9; digit1++)
+
+					{
+
+								for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+
+											{
+
+															for (digit3 = digit2 + 1; digit3 < 10; digit3++)
+
+																			{
+
+
+
+																								putchar((digit1 % 10) + '0');
+
+																												putchar((digit2 % 10) + '0');
+
+																																putchar((digit3 % 10) + '0');
+
+
+
+																																				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
+
+																																										continue;
+
+
+
+																																								putchar(',');
+
+																																												putchar(' ');
+
+																																															}
+
+																	}
+
+									}
+
+				putchar('\n');
+
+					return (0);
+
 }
-
